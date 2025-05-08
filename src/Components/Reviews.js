@@ -34,10 +34,12 @@ function Reviews() {
     <div className="review-section" id="reviews">
       <div className="rw-text-content">
         <p className="rw-text-title">
-          More over <span className="rw-text-num">1500+ Customers</span>
+          Trusted by <span className="rw-text-num">1500+ Happy Clients</span>
         </p>
 
-        <p className="rw-text-desc">Don't believe us, Check clients word</p>
+        <p className="rw-text-desc">
+          Don’t take our word for it — see what our customers have to say!
+        </p>
 
         <p className="rw-text-format">
           <span className="rw-text-quote1">''</span>

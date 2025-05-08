@@ -6,47 +6,49 @@ import { ToastContainer, toast } from "react-toastify";
 function AppointmentForm() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  }, []);
 
-  const [patientName, setPatientName] = useState("");
-  const [patientNumber, setPatientNumber] = useState("");
-  const [patientGender, setPatientGender] = useState("default");
+  const [clientName, setClientName] = useState("");
+  const [clientPhone, setClientPhone] = useState("");
+  const [serviceType, setServiceType] = useState("default");
   const [appointmentTime, setAppointmentTime] = useState("");
-  const [preferredMode, setPreferredMode] = useState("default");
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [location, setLocation] = useState("");
   const [formErrors, setFormErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate form inputs
     const errors = {};
-    if (!patientName.trim()) {
-      errors.patientName = "Patient name is required";
-    } else if (patientName.trim().length < 8) {
-      errors.patientName = "Patient name must be at least 8 characters";
+
+    if (!clientName.trim()) {
+      errors.clientName = "Full name is required";
+    } else if (clientName.trim().length < 5) {
+      errors.clientName = "Full name must be at least 5 characters";
     }
 
-    if (!patientNumber.trim()) {
-      errors.patientNumber = "Patient phone number is required";
-    } else if (patientNumber.trim().length !== 10) {
-      errors.patientNumber = "Patient phone number must be of 10 digits";
+    if (!clientPhone.trim()) {
+      errors.clientPhone = "Phone number is required";
+    } else if (clientPhone.trim().length !== 10) {
+      errors.clientPhone = "Phone number must be 10 digits";
     }
 
-    if (patientGender === "default") {
-      errors.patientGender = "Please select patient gender";
+    if (serviceType === "default") {
+      errors.serviceType = "Please select a service";
     }
+
     if (!appointmentTime) {
-      errors.appointmentTime = "Appointment time is required";
+      errors.appointmentTime = "Preferred date and time is required";
     } else {
       const selectedTime = new Date(appointmentTime).getTime();
       const currentTime = new Date().getTime();
       if (selectedTime <= currentTime) {
-        errors.appointmentTime = "Please select a future appointment time";
+        errors.appointmentTime = "Please choose a future time";
       }
     }
-    if (preferredMode === "default") {
-      errors.preferredMode = "Please select preferred mode";
+
+    if (!location.trim()) {
+      errors.location = "Service location is required";
     }
 
     if (Object.keys(errors).length > 0) {
@@ -54,15 +56,14 @@ function AppointmentForm() {
       return;
     }
 
-    // Reset form fields and errors after successful submission
-    setPatientName("");
-    setPatientNumber("");
-    setPatientGender("default");
+    setClientName("");
+    setClientPhone("");
+    setServiceType("default");
     setAppointmentTime("");
-    setPreferredMode("default");
+    setLocation("");
     setFormErrors({});
 
-    toast.success("Appointment Scheduled !", {
+    toast.success("Service Request Submitted!", {
       position: toast.POSITION.TOP_CENTER,
       onOpen: () => setIsSubmitted(true),
       onClose: () => setIsSubmitted(false),
@@ -73,58 +74,57 @@ function AppointmentForm() {
     <div className="appointment-form-section">
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Health <span className="legal-siteSign">+</span>
+          Bhassi <span className="legal-siteSign">&</span> Dhesi Services
         </Link>
       </h1>
 
       <div className="form-container">
         <h2 className="form-title">
-          <span>Book Appointment Online</span>
+          <span>Request a Service</span>
         </h2>
 
         <form className="form-content" onSubmit={handleSubmit}>
           <label>
-            Patient Full Name:
+            Full Name:
             <input
               type="text"
-              value={patientName}
-              onChange={(e) => setPatientName(e.target.value)}
+              value={clientName}
+              onChange={(e) => setClientName(e.target.value)}
               required
             />
-            {formErrors.patientName && <p className="error-message">{formErrors.patientName}</p>}
+            {formErrors.clientName && <p className="error-message">{formErrors.clientName}</p>}
           </label>
 
-          <br />
           <label>
-            Patient Phone Number:
+            Phone Number:
             <input
               type="text"
-              value={patientNumber}
-              onChange={(e) => setPatientNumber(e.target.value)}
+              value={clientPhone}
+              onChange={(e) => setClientPhone(e.target.value)}
               required
             />
-            {formErrors.patientNumber && <p className="error-message">{formErrors.patientNumber}</p>}
+            {formErrors.clientPhone && <p className="error-message">{formErrors.clientPhone}</p>}
           </label>
 
-          <br />
           <label>
-            Patient Gender:
+            Type of Service:
             <select
-              value={patientGender}
-              onChange={(e) => setPatientGender(e.target.value)}
+              value={serviceType}
+              onChange={(e) => setServiceType(e.target.value)}
               required
             >
               <option value="default">Select</option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="private">I will inform Doctor only</option>
+              <option value="cleaning">Post-Construction Cleaning</option>
+              <option value="renovation">Interior Renovation</option>
+              <option value="general">General Contracting</option>
+              <option value="commercial">Commercial Cleaning</option>
+              <option value="other">Other</option>
             </select>
-            {formErrors.patientGender && <p className="error-message">{formErrors.patientGender}</p>}
+            {formErrors.serviceType && <p className="error-message">{formErrors.serviceType}</p>}
           </label>
 
-          <br />
           <label>
-            Preferred Appointment Time:
+            Preferred Date & Time:
             <input
               type="datetime-local"
               value={appointmentTime}
@@ -134,32 +134,29 @@ function AppointmentForm() {
             {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
           </label>
 
-          <br />
           <label>
-            Preferred Mode:
-            <select
-              value={preferredMode}
-              onChange={(e) => setPreferredMode(e.target.value)}
+            Service Location:
+            <input
+              type="text"
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
               required
-            >
-              <option value="default">Select</option>
-              <option value="voice">Voice Call</option>
-              <option value="video">Video Call</option>
-            </select>
-            {formErrors.preferredMode && <p className="error-message">{formErrors.preferredMode}</p>}
+            />
+            {formErrors.location && <p className="error-message">{formErrors.location}</p>}
           </label>
 
-          <br />
           <button type="submit" className="text-appointment-btn">
-            Confirm Appointment
+            Submit Request
           </button>
 
-          <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Appointment details has been sent to the patients phone number via SMS.</p>
+          <p className="success-message" style={{ display: isSubmitted ? "block" : "none" }}>
+            Your service request has been received. We'll contact you shortly!
+          </p>
         </form>
       </div>
 
       <div className="legal-footer">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Bhassi & Dhesi Services. All rights reserved.</p>
       </div>
 
       <ToastContainer autoClose={5000} limit={1} closeButton={false} />

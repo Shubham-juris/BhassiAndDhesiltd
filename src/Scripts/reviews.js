@@ -1,52 +1,52 @@
 export const customerReviews = [
-    {
-      "name": "Esther Howard",
-      "location": "Texas, USA",
-      "message": "Health Plus transformed my healthcare experience! The online consultations were so convenient, and the doctors were knowledgeable and caring."
-    },
-    {
-      "name": "John Doe",
-      "location": "California, USA",
-      "message": "I found the perfect specialist for my condition through Health Plus. The personalized treatment plan made all the difference. Thank you for prioritizing my health!"
-    },
-    {
-      "name": "Alice Smith",
-      "location": "New York, USA",
-      "message": "Booking appointments was a breeze, and the service exceeded my expectations. The doctors truly listen and provide effective solutions. 5 stars!"
-    },
-    {
-      "name": "Bob Johnson",
-      "location": "Florida, USA",
-      "message": "Health Plus is a game-changer! The emergency care saved me during a critical situation. Grateful for their quick and efficient support."
-    },
-    {
-      "name": "Jane Brown",
-      "location": "Washington, USA",
-      "message": "I used to dread dental visits, but Health Plus made it a pleasant experience. The dentist was gentle and professional. I'll definitely be back!"
-    },
-    {
-      "name": "Robert Wilson",
-      "location": "Texas, USA",
-      "message": "Finally, a healthcare platform that puts patients first! The heart disease service provided comprehensive care and regular follow-ups. Thank you, Health Plus!"
-    },
-    {
-      "name": "Mary Lee",
-      "location": "California, USA",
-      "message": "I've been using Health Plus for a variety of health concerns, and each time, I received exceptional care. It's my go-to for all medical needs!"
-    },
-    {
-      "name": "David Miller",
-      "location": "Texas, USA",
-      "message": "I highly recommend Health Plus for online consultations. It's convenient, secure, and the doctors are top-notch. Great job, team!"
-    },
-    {
-      "name": "Sarah Johnson",
-      "location": "Florida, USA",
-      "message": "The convenience of accessing medical notes online was fantastic. Health Plus made managing my health records hassle-free! Best Healthcare services."
-    },
-    {
-      "name": "Michael Brown",
-      "location": "New York, USA",
-      "message": "As a busy professional, Health Plus has been a lifesaver. Quick prescriptions and refills without compromising on quality care. Thank you!"
-    }
+  {
+    "name": "Esther Howard",
+    "location": "Texas, USA",
+    "message": "Clean&Build completely transformed my home! The renovation team was efficient and professional, and the cleaning crew did an outstanding job. I couldn’t be happier with the results!"
+  },
+  {
+    "name": "John Doe",
+    "location": "California, USA",
+    "message": "I hired Clean&Build for a complete kitchen remodel. The project was handled with precision and care, and the team was always available to answer my questions. Highly recommend!"
+  },
+  {
+    "name": "Alice Smith",
+    "location": "New York, USA",
+    "message": "Booking a cleaning service with Clean&Build was so simple, and they did a fantastic job. My home has never looked better! Professional and thorough."
+  },
+  {
+    "name": "Bob Johnson",
+    "location": "Florida, USA",
+    "message": "Clean&Build saved me during a major home emergency. The construction team came in, assessed the damage, and completed the repairs quickly. I’m so grateful for their fast and reliable service."
+  },
+  {
+    "name": "Jane Brown",
+    "location": "Washington, USA",
+    "message": "I had Clean&Build handle both a deep cleaning and a bathroom renovation. The service was seamless, and the quality exceeded my expectations. They really care about their work!"
+  },
+  {
+    "name": "Robert Wilson",
+    "location": "Texas, USA",
+    "message": "Clean&Build is a game-changer! The team handled my office’s cleaning and minor construction repairs, and the results were amazing. It’s so easy to work with them."
+  },
+  {
+    "name": "Mary Lee",
+    "location": "California, USA",
+    "message": "I’ve used Clean&Build for multiple home improvement projects, from floor installations to deep cleaning. Each time, their team delivered exceptional quality and service. Highly recommend!"
+  },
+  {
+    "name": "David Miller",
+    "location": "Texas, USA",
+    "message": "I can’t thank Clean&Build enough for their professionalism. Their team did an excellent job remodeling our living room and providing a thorough cleaning after the work. Truly exceptional service."
+  },
+  {
+    "name": "Sarah Johnson",
+    "location": "Florida, USA",
+    "message": "The cleaning service from Clean&Build was flawless. I’ve never seen my house so spotless! They’re detail-oriented, punctual, and incredibly thorough. I’ll definitely be using them again."
+  },
+  {
+    "name": "Michael Brown",
+    "location": "New York, USA",
+    "message": "I’m so impressed with Clean&Build’s renovation work. They were respectful of my space, kept everything tidy, and the results were exactly what I wanted. Amazing job, team!"
+  }
 ];

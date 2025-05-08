@@ -1,5 +1,5 @@
 import React from "react";
-import Doctor from "../Assets/doctor-group.png";
+import Workers from "../Assets/swqqq1.webp"; // Replace with a real image
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 
@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="about-section" id="about">
       <div className="about-image-content">
-        <img src={Doctor} alt="Doctor Group" className="about-image1" />
+        <img src={Workers} alt="Construction Team" className="about-image1" />
       </div>
 
       <div className="about-text-content">
@@ -15,27 +15,27 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Welcome to Health Plus, your trusted partner for accessible and
-          personalized healthcare. Our expert doctors offer online consultations
-          and specialized services, prioritizing your well-being. Join us on
-          this journey towards a healthier you.
+          Welcome to Bhassi & Dhesi Services — your go-to team for reliable cleaning
+          and construction solutions. With a strong foundation in community values and
+          hands-on experience, we deliver professional results with a personal touch.
+          From spotless homes to robust renovations, we build trust while we build your space.
         </p>
 
-        <h4 className="about-text-title">Your Solutions</h4>
+        <h4 className="about-text-title">How We Work</h4>
 
         <SolutionStep
-          title="Choose a Specialist"
-          description="Find your perfect specialist and book with ease at Health Plus. Expert doctors prioritize your health, offering tailored care."
+          title="Request a Service"
+          description="Tell us what you need — whether it’s cleaning, renovation, or repairs — and we’ll take care of the rest."
         />
 
         <SolutionStep
-          title="Make a Schedule"
-          description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
+          title="Schedule a Visit"
+          description="Pick a time that works for you. Our friendly and skilled team will arrive promptly, fully prepared."
         />
 
         <SolutionStep
-          title="Get Your Solutions"
-          description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
+          title="Get the Job Done"
+          description="We work efficiently and respectfully, delivering high-quality results that meet your standards and budget."
         />
       </div>
     </div>

@@ -1,11 +1,11 @@
 import React from "react";
-import Doctor from "../Assets/doctor-book-appointment.png";
+import Workers from "../Assets/sweeper.webp"; // Update with a relevant image
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleCheck,
   faCalendarCheck,
 } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Styles/BookAppointment.css";
 
 function BookAppointment() {
@@ -18,31 +18,30 @@ function BookAppointment() {
   return (
     <div className="ba-section">
       <div className="ba-image-content">
-        <img src={Doctor} alt="Doctor Group" className="ba-image1" />
+        <img src={Workers} alt="Construction & Cleaning Crew" className="ba-image1" />
       </div>
 
       <div className="ba-text-content">
         <h3 className="ba-title">
-          <span>Why Choose Health</span>
+          <span>Why Choose Us</span>
         </h3>
         <p className="ba-description">
-          Discover the reasons to choose Health Plus for your healthcare needs.
-          Experience expert care, convenience, and personalized solutions,
-          making your well-being our top priority. Join us on a journey to
-          better health and a happier life.
+          Bhassi & Dhesi Services offers dependable cleaning and construction solutions
+          designed around your schedule and standards. From daily cleaning to major renovations,
+          our skilled team delivers quality results with professionalism and care.
         </p>
 
         <p className="ba-checks ba-check-first">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Best Professional Doctors
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Experienced & Trained Professionals
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Emergency Care
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Reliable and On-Time Service
         </p>
         <p className="ba-checks">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> 24/7 Support Live Chat
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Affordable Pricing & Free Estimates
         </p>
         <p className="ba-checks ba-check-last">
-          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Enrollment Easy and Quick
+          <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Flexible Scheduling
         </p>
 
         <button
@@ -50,7 +49,7 @@ function BookAppointment() {
           type="button"
           onClick={handleBookAppointmentClick}
         >
-          <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+          <FontAwesomeIcon icon={faCalendarCheck} /> Schedule a Service
         </button>
       </div>
     </div>

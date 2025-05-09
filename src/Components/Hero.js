@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/doctor-picture.png";
+import WorkerImage from "../Assets/sweeper.webp"; // Replace with relevant image
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 
 function Hero() {
@@ -13,8 +13,8 @@ function Hero() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleBookAppointmentClick = () => {
-    navigate("/appointment");
+  const handleRequestServiceClick = () => {
+    navigate("/request-service");
   };
 
   useEffect(() => {
@@ -36,42 +36,42 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">❤️ Health comes first</p>
+          <p className="text-headline">🛠️ Clean & Build with Trust</p>
           <h2 className="text-title">
-            Find your Doctor and make an Appointments
+            Professional Cleaning & Construction Services
           </h2>
           <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
+            Offering Bhassi and Dhesi-style cleaning, repairs, remodeling, and
+            post-construction cleaning with a personal touch. Reliable and
+            community-driven service you can trust.
           </p>
           <button
             className="text-appointment-btn"
             type="button"
-            onClick={handleBookAppointmentClick}
+            onClick={handleRequestServiceClick}
           >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
+            <FontAwesomeIcon icon={faCalendarCheck} /> Request a Service
           </button>
           <div className="text-stats">
             <div className="text-stats-container">
-              <p>145k+</p>
-              <p>Receive Patients</p>
+              <p>300+</p>
+              <p>Projects Completed</p>
             </div>
 
             <div className="text-stats-container">
-              <p>50+</p>
-              <p>Expert Doctors</p>
+              <p>100+</p>
+              <p>Satisfied Clients</p>
             </div>
 
             <div className="text-stats-container">
-              <p>10+</p>
-              <p>Years of Experience</p>
+              <p>15+</p>
+              <p>Years Experience</p>
             </div>
           </div>
         </div>
 
         <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
+          <img className="hero-image1" src={WorkerImage} alt="Construction Worker" />
         </div>
       </div>
 

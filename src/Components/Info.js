@@ -1,6 +1,10 @@
 import React from "react";
 import InformationCard from "./InformationCard";
-import { faHeartPulse, faTruckMedical, faTooth } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBroom,
+  faHammer,
+  faPeopleCarryBox
+} from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Info.css";
 
 function Info() {
@@ -8,45 +12,31 @@ function Info() {
     <div className="info-section" id="services">
       <div className="info-title-content">
         <h3 className="info-title">
-          <span>What We Do</span>
+          <span>Our Services</span>
         </h3>
         <p className="info-description">
-          We bring healthcare to your convenience, offering a comprehensive
-          range of on-demand medical services tailored to your needs. Our
-          platform allows you to connect with experienced online doctors who
-          provide expert medical advice, issue online prescriptions, and offer
-          quick refills whenever you require them.
+          At Bhassi & Dhesi Services, we specialize in reliable cleaning and construction solutions.
+          From everyday cleaning to complex renovations, we bring quality, trust, and a personal touch to every project.
         </p>
       </div>
 
       <div className="info-cards-content">
         <InformationCard
-          title="Emergency Care"
-          description="Our Emergency Care service is designed to be your reliable support
-            in critical situations. Whether it's a sudden illness, injury, or
-            any medical concern that requires immediate attention, our team of
-            dedicated healthcare professionals is available 24/7 to provide
-            prompt and efficient care."
-          icon={faTruckMedical}
+          title="Residential & Commercial Cleaning"
+          description="Our expert team ensures your spaces are spotless and hygienic. Whether it’s home, office, or retail, we use eco-friendly methods to deliver top-tier cleaning tailored to your needs."
+          icon={faBroom}
         />
 
         <InformationCard
-          title="Heart Disease"
-          description="Our team of experienced cardiologists and medical experts use
-            state-of-the-art technology to assess your cardiovascular health and
-            design personalized treatment plans. From comprehensive screenings
-            to advanced interventions, we are committed to helping you maintain
-            a healthy heart and lead a fulfilling life."
-          icon={faHeartPulse}
+          title="Renovation & Repairs"
+          description="Need a kitchen makeover or structural repair? We provide skilled construction and renovation services that breathe new life into your property with precision and professionalism."
+          icon={faHammer}
         />
 
         <InformationCard
-          title="Dental Care"
-          description="Smile with confidence as our Dental Care services cater to all your
-            oral health needs. Our skilled dentists provide a wide range of
-            treatments, from routine check-ups and cleanings to cosmetic
-            procedures and restorative treatments."
-          icon={faTooth}
+          title="Post-Construction Cleanup"
+          description="After the build, we handle the mess. Our post-construction cleaning service removes debris, dust, and leftover materials, making your newly completed space ready to use."
+          icon={faPeopleCarryBox}
         />
       </div>
     </div>

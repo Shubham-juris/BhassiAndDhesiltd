@@ -19,7 +19,7 @@ function Navbar() {
 
   const handleChatBtnClick = () => {
     if (!isButtonDisabled) {
-      toast.info("Experiencing high traffic, Please wait a moment.", {
+      toast.info("Our agents are currently busy. Please hold on.", {
         position: toast.POSITION.TOP_CENTER,
         onOpen: () => setIsButtonDisabled(true),
         onClose: () => setIsButtonDisabled(false),
@@ -31,7 +31,7 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Health <span className="navbar-sign">+</span>
+          Bhassi<span className="navbar-sign"> & Dhesi services</span>
         </Link>
       </h1>
 
@@ -48,18 +48,18 @@ function Navbar() {
           </a>
         </li>
         <li>
+          <a href="#projects" className="navbar-links">
+            Projects
+          </a>
+        </li>
+        <li>
           <a href="#about" className="navbar-links">
-            About
+            About Us
           </a>
         </li>
         <li>
-          <a href="#reviews" className="navbar-links">
-            Reviews
-          </a>
-        </li>
-        <li>
-          <a href="#doctors" className="navbar-links">
-            Doctors
+          <a href="#contact" className="navbar-links">
+            Contact
           </a>
         </li>
       </ul>
@@ -70,7 +70,7 @@ function Navbar() {
         disabled={isButtonDisabled}
         onClick={handleChatBtnClick}
       >
-        <FontAwesomeIcon icon={faCommentDots} /> Live Chat
+        <FontAwesomeIcon icon={faCommentDots} /> Request Service
       </button>
 
       {/* Mobile */}
@@ -91,18 +91,13 @@ function Navbar() {
             </a>
           </li>
           <li>
+            <a onClick={openNav} href="#projects">
+              Projects
+            </a>
+          </li>
+          <li>
             <a onClick={openNav} href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a onClick={openNav} href="#reviews">
-              Reviews
-            </a>
-          </li>
-          <li>
-            <a onClick={openNav} href="#doctors">
-              Doctors
+              About Us
             </a>
           </li>
           <li>

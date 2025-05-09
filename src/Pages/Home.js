@@ -17,7 +17,7 @@ function Home() {
       <About />
       <BookAppointment />
       <Reviews />
-      <Doctors />
+      // <Doctors />
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-# Health Plus
+<!-- # Health Plus
 
 Welcome to the Health Plus project repository! This is a React-based website aimed at providing accessible and personalized healthcare services to users. The website allows users to connect with expert doctors, schedule appointments, and receive expert medical advice.
 
@@ -75,4 +75,4 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE "Project LICENSE").
+This project is licensed under the [MIT License](./LICENSE "Project LICENSE"). -->

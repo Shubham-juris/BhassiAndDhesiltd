@@ -4,7 +4,7 @@ import profile1 from "../Assets/profile1.webp";
 import profile2 from "../Assets/profile2.webp";
 import profile3 from "../Assets/profile3.webp";
 import profile4 from "../Assets/profile4.webp";
-import "../Styles/Doctors.css";
+
 
 function Team() {
   return (

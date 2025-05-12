@@ -1,5 +1,5 @@
 import React from "react";
-import Workers from "../Assets/swqqq1.webp"; // Replace with a real image
+import Workers from "../Assets/swqqq1.webp"; 
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 

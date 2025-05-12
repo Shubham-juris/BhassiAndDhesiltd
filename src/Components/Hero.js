@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import WorkerImage from "../Assets/sweeper.webp"; // Replace with relevant image
+import WorkerImage from "../Assets/sweeper.webp"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";

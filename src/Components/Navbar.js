@@ -47,11 +47,7 @@ function Navbar() {
             Services
           </a>
         </li>
-        <li>
-          <a href="#projects" className="navbar-links">
-            Projects
-          </a>
-        </li>
+        
         <li>
           <a href="#about" className="navbar-links">
             About Us

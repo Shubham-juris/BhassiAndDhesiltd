@@ -10,7 +10,7 @@ function Footer() {
         <div className="ft-info">
           <div className="ft-info-p1">
             <p className="ft-title">
-              Bhassi <span className="ft-sign">&</span> Dhesi Services
+              Bassi <span className="ft-sign">&</span> Dhesi Services
             </p>
             <p className="ft-description">
               Professional cleaning and construction services tailored for your

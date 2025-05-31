@@ -61,7 +61,7 @@ function Footer() {
           {/* Embedded Google Map */}
           <div className="ft-map-container" style={{ marginTop: "1rem" }}>
             <iframe
-              title="Bhassi & Dhesi Location"
+              title="Bassi & Dhesi Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.094113372165!2d-113.93621562342472!3d51.09605604380174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537165a7e05b2365%3A0x9d91be77e3939e3f!2s184%20Falshire%20Close%20NE%2C%20Calgary%2C%20AB%20T3J%202Z9%2C%20Canada!5e0!3m2!1sen!2sus!4v1715144219153!5m2!1sen!2sus"
               width="100%"
               height="200"

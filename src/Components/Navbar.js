@@ -31,7 +31,7 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Bhassi<span className="navbar-sign"> & Dhesi services</span>
+          Bassi<span className="navbar-sign"> & Dhesi services</span>
         </Link>
       </h1>
 
